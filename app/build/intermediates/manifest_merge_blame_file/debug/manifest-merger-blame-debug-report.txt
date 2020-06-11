@@ -1,0 +1,63 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.galmiza.android.spectrogram"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:7:5-71
+12-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:7:22-68
+13
+14    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+15    <application
+15-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:10:5-29:19
+16        android:allowBackup="true"
+16-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:11:9-35
+17        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+17-->[com.android.support:support-compat:28.0.0] C:\Users\V3Anom\.gradle\caches\transforms-2\files-2.1\ccbd3881d3e597a650ace942161206f5\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+18        android:debuggable="true"
+19        android:icon="@drawable/ic_launcher"
+19-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:12:9-45
+20        android:label="@string/app_name"
+20-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:13:9-41
+21        android:testOnly="true"
+22        android:theme="@style/Theme.AppCompat.Light" >
+22-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:14:9-53
+23        <activity
+23-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:15:9-24:20
+24            android:name="net.galmiza.android.spectrogram.SpectrogramActivity"
+24-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:16:13-79
+25            android:configChanges=""
+25-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:19:13-37
+26            android:label="@string/app_name"
+26-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:17:13-45
+27            android:launchMode="singleTop" > <!-- android:screenOrientation="landscape" -->
+27-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:18:13-43
+28            <intent-filter>
+28-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:20:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:21:17-69
+29-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:21:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:22:17-77
+31-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:25:9-28:20
+35            android:name="net.galmiza.android.spectrogram.PreferencesActivity"
+35-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:26:13-79
+36            android:label="@string/app_name" >
+36-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:27:13-45
+37        </activity>
+38    </application>
+39
+40</manifest>

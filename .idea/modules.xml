@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spectrogram-android.iml" filepath="$PROJECT_DIR$/spectrogram-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="spectrogram-android/app" />
+      <module fileurl="file://$PROJECT_DIR$/spectrogram-android.iml" filepath="$PROJECT_DIR$/spectrogram-android.iml" group="spectrogram-android" />
     </modules>
   </component>
 </project>
