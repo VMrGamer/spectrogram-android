@@ -60,7 +60,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="8dc1dc5d" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-12T10:17:04.590Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-12T13:40:58.178Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="cd89f4eb" />
@@ -154,22 +154,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591865698011" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1591961778562">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1591972408246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591961778562" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1591961778562">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591972408246" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1591972408246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591961778562" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1591961778561">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591972408246" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1591972408246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591961778561" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1591961778562">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591972408246" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1591972408246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591961778562" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591972408246" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591954854840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
