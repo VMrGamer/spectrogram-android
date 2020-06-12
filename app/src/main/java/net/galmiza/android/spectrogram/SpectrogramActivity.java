@@ -59,7 +59,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 	private ContinuousRecord recorder;
 	private SoundEngine nativeLib;
 	private Menu menu;
-	private int samplingRate = 44100;
+	private int samplingRate = 16000;
 	private int fftResolution;
 	
 	// Buffers
