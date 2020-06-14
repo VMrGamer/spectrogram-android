@@ -27,10 +27,21 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import net.galmiza.android.engine.sound.SoundEngine;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -61,6 +72,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 	private ContinuousRecord recorder;
 	private SoundEngine nativeLib;
 	private Menu menu;
+	private ImageView imageView;
 	private int samplingRate = 16000;
 	private int fftResolution;
 	
@@ -93,6 +105,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 		
 		// Create view for frequency display
 		setContentView(R.layout.main);
+		imageView = findViewById(R.id.imageView);
 		frequencyView = findViewById(R.id.frequency_view);
 		timeView = findViewById(R.id.time_view);
 		if (Misc.getPreference(this, "keep_screen_on", false))
@@ -336,6 +349,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 			fileBuffer[iterVal * i] = recordBuffer[i];
 		}
 		if(iterVal == 64){
+			sendFile();
 			iterVal = 0;
 			Log.d("YOYO", "getTrunks: "+ Arrays.toString(fileBuffer));
 		}
@@ -357,6 +371,111 @@ public class SpectrogramActivity extends AppCompatActivity {
 		short[] first = bufferStack.get(0);
 		short[] last = bufferStack.get(bufferStack.size()-1);
 		System.arraycopy(last, 0, first, 0, n/2);
+	}
+
+	/**
+	 * Convert to JSON object and
+	 * Start a request JSON
+	 */
+	private void sendFile(){
+		JSONObject jsonObject = new JSONObject();
+		try {
+			jsonObject.put("audio",new JSONArray(fileBuffer));
+			jsonObject.put("sample_rate",samplingRate);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		Thread thread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					URL url = new URL("http://35.225.111.68:8080/predict");
+					HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+					conn.setRequestMethod("POST");
+					conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
+					conn.setRequestProperty("Accept", "application/json");
+					conn.setDoOutput(true);
+					conn.setDoInput(true);
+
+					Log.i("JSON", jsonObject.toString());
+					DataOutputStream os = new DataOutputStream(conn.getOutputStream());
+					os.writeBytes(jsonObject.toString());
+
+					os.flush();
+					os.close();
+
+					Log.i("STATUS", String.valueOf(conn.getResponseCode()));
+
+					try(BufferedReader br = new BufferedReader(
+							new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
+						StringBuilder response = new StringBuilder();
+						String responseLine = null;
+						while ((responseLine = br.readLine()) != null) {
+							response.append(responseLine.trim());
+						}
+						//Log.i("MSG" , response.toString());
+						printLabel(response.toString().replaceAll("^\"|\"$", ""));
+					}
+
+					conn.disconnect();
+				} catch (Exception e){
+					e.printStackTrace();
+				}
+			}
+		});
+		thread.start();
+	}
+
+	/**
+	 * Handle the POST return data
+	 */
+	private void printLabel(String label){
+
+		Log.d("Engine Output", "label: "+label);
+		switch (label) {
+			case "air_conditioner":
+				imageView.setImageResource(R.drawable.a);
+				Log.d("Engine Output", "label: a");
+				break;
+			case "car_horn":
+				imageView.setImageResource(R.drawable.b);
+				Log.d("Engine Output", "label: b");
+				break;
+			case "children_playing":
+				imageView.setImageResource(R.drawable.c);
+				Log.d("Engine Output", "label: c");
+				break;
+			case "dog_bark":
+				imageView.setImageResource(R.drawable.d);
+				Log.d("Engine Output", "label: d");
+				break;
+			case "drilling":
+				imageView.setImageResource(R.drawable.e);
+				Log.d("Engine Output", "label: e");
+				break;
+			case "engine_idling":
+				imageView.setImageResource(R.drawable.f);
+				Log.d("Engine Output", "label: f");
+				break;
+			case "gun_shot":
+				imageView.setImageResource(R.drawable.g);
+				Log.d("Engine Output", "label: g");
+				break;
+			case "jackhammer":
+				imageView.setImageResource(R.drawable.h);
+				Log.d("Engine Output", "label: h");
+				break;
+			case "siren":
+				imageView.setImageResource(R.drawable.i);
+				Log.d("Engine Output", "label: i");
+				break;
+			case "street_music":
+				imageView.setImageResource(R.drawable.j);
+				Log.d("Engine Output", "label: j");
+				break;
+			default:
+				Log.d("SOME SHIT", "printLabel: WHYYY!!!!!!");
+		}
 	}
 	
 	/**
@@ -411,56 +530,5 @@ public class SpectrogramActivity extends AppCompatActivity {
 		System.out.println(frequencyView.getVisibility());
 		if (frequencyView.getVisibility() == View.GONE)	frequencyView.setVisibility(View.VISIBLE);
 		else											frequencyView.setVisibility(View.GONE);
-	}
-
-	private byte[] wavFileHeader(long totalAudioLen, long totalDataLen, long longSampleRate,
-								 int channels, long byteRate, byte bitsPerSample) {
-		byte[] header = new byte[44];
-		header[0] = 'R'; // RIFF/WAVE header
-		header[1] = 'I';
-		header[2] = 'F';
-		header[3] = 'F';
-		header[4] = (byte) (totalDataLen & 0xff);
-		header[5] = (byte) ((totalDataLen >> 8) & 0xff);
-		header[6] = (byte) ((totalDataLen >> 16) & 0xff);
-		header[7] = (byte) ((totalDataLen >> 24) & 0xff);
-		header[8] = 'W';
-		header[9] = 'A';
-		header[10] = 'V';
-		header[11] = 'E';
-		header[12] = 'f'; // 'fmt ' chunk
-		header[13] = 'm';
-		header[14] = 't';
-		header[15] = ' ';
-		header[16] = 16; // 4 bytes: size of 'fmt ' chunk
-		header[17] = 0;
-		header[18] = 0;
-		header[19] = 0;
-		header[20] = 1; // format = 1
-		header[21] = 0;
-		header[22] = (byte) channels;
-		header[23] = 0;
-		header[24] = (byte) (longSampleRate & 0xff);
-		header[25] = (byte) ((longSampleRate >> 8) & 0xff);
-		header[26] = (byte) ((longSampleRate >> 16) & 0xff);
-		header[27] = (byte) ((longSampleRate >> 24) & 0xff);
-		header[28] = (byte) (byteRate & 0xff);
-		header[29] = (byte) ((byteRate >> 8) & 0xff);
-		header[30] = (byte) ((byteRate >> 16) & 0xff);
-		header[31] = (byte) ((byteRate >> 24) & 0xff);
-		header[32] = (byte) (channels * (bitsPerSample / 8)); //
-		// block align
-		header[33] = 0;
-		header[34] = bitsPerSample; // bits per sample
-		header[35] = 0;
-		header[36] = 'd';
-		header[37] = 'a';
-		header[38] = 't';
-		header[39] = 'a';
-		header[40] = (byte) (totalAudioLen & 0xff);
-		header[41] = (byte) ((totalAudioLen >> 8) & 0xff);
-		header[42] = (byte) ((totalAudioLen >> 16) & 0xff);
-		header[43] = (byte) ((totalAudioLen >> 24) & 0xff);
-		return header;
 	}
 }

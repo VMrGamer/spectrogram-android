@@ -1,7 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
-        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\xml\\preferences.xml"
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_b.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\b.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
@@ -20,28 +20,24 @@
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_pause.png.flat",
-        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-mdpi\\ic_action_pause.png"
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\d.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_settings.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_settings.png"
     },
     {
-        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_settings.png.flat",
-        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_settings.png"
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_i.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\i.png"
     },
     {
-        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_play.png.flat",
-        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_play.png"
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_f.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\f.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_play.png.flat",
-        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_play.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
@@ -60,8 +56,8 @@
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-hdpi\\card_background.png"
     },
     {
-        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
-        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\menu\\main_menu.xml"
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_h.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\h.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_pause.png.flat",
@@ -76,12 +72,60 @@
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-hdpi\\ic_action_settings.png"
     },
     {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_a.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\a.png"
+    },
+    {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_pause.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_pause.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_play.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-hdpi\\ic_action_play.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_c.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\c.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_pause.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-mdpi\\ic_action_pause.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_settings.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_e.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\e.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_j.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\j.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_play.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_play.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_play.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_play.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_x.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\x.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_g.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\g.png"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
