@@ -30,39 +30,38 @@
 20-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:13:9-45
 21        android:label="@string/app_name"
 21-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:14:9-41
-22        android:testOnly="true"
-23        android:theme="@style/Theme.AppCompat.Light"
-23-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:15:9-53
-24        android:usesCleartextTraffic="true" >
-24-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:16:9-44
-25        <activity
-25-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:17:9-26:20
-26            android:name="net.galmiza.android.spectrogram.SpectrogramActivity"
-26-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:18:13-79
-27            android:configChanges=""
-27-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:21:13-37
-28            android:label="@string/app_name"
-28-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:19:13-45
-29            android:launchMode="singleTop" > <!-- android:screenOrientation="landscape" -->
-29-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:20:13-43
-30            <intent-filter>
-30-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:22:13-25:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:23:17-69
-31-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:23:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:24:17-77
-33-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:24:27-74
-34            </intent-filter>
-35        </activity>
-36        <activity
-36-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:27:9-30:20
-37            android:name="net.galmiza.android.spectrogram.PreferencesActivity"
-37-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:28:13-79
-38            android:label="@string/app_name" >
-38-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:29:13-45
-39        </activity>
-40    </application>
-41
-42</manifest>
+22        android:theme="@style/Theme.AppCompat.Light"
+22-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:15:9-53
+23        android:usesCleartextTraffic="true" >
+23-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:16:9-44
+24        <activity
+24-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:17:9-26:20
+25            android:name="net.galmiza.android.spectrogram.SpectrogramActivity"
+25-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:18:13-79
+26            android:configChanges=""
+26-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:21:13-37
+27            android:label="@string/app_name"
+27-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:19:13-45
+28            android:launchMode="singleTop" > <!-- android:screenOrientation="landscape" -->
+28-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:20:13-43
+29            <intent-filter>
+29-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:22:13-25:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:23:17-69
+30-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:23:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:24:17-77
+32-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:24:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:27:9-30:20
+36            android:name="net.galmiza.android.spectrogram.PreferencesActivity"
+36-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:28:13-79
+37            android:label="@string/app_name" >
+37-->C:\Users\V3Anom\Documents\GitHub\spectrogram-android\app\src\main\AndroidManifest.xml:29:13-45
+38        </activity>
+39    </application>
+40
+41</manifest>
