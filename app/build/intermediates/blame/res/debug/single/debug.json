@@ -48,6 +48,10 @@
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-mdpi\\card_background.png"
     },
     {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_y.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\y.png"
+    },
+    {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_settings.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-mdpi\\ic_action_settings.png"
     },

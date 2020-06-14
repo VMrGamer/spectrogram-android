@@ -1037,6 +1037,7 @@ int drawable notify_panel_notification_icon_bg 0x7f080082
 int drawable tooltip_frame_dark 0x7f080083
 int drawable tooltip_frame_light 0x7f080084
 int drawable x 0x7f080085
+int drawable y 0x7f080086
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
 int id FUNCTION 0x7f090002

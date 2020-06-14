@@ -420,6 +420,9 @@ public class SpectrogramActivity extends AppCompatActivity {
 					conn.disconnect();
 				} catch (Exception e){
 					e.printStackTrace();
+					if(e.getClass().getCanonicalName().equals("java.net.ConnectException")){
+						imageView.setImageResource(R.drawable.y);
+					}
 				}
 			}
 		});

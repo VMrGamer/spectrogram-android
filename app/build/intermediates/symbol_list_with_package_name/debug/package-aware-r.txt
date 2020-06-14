@@ -1038,6 +1038,7 @@ drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable x
+drawable y
 id ALT
 id CTRL
 id FUNCTION
