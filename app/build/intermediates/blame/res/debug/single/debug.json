@@ -40,6 +40,10 @@
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_w.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\w.png"
+    },
+    {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\layout\\main.xml"
     },
@@ -108,6 +112,10 @@
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\e.png"
     },
     {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_z.png.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\z.png"
+    },
+    {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_j.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\j.png"
     },
@@ -118,6 +126,10 @@
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_play.png.flat",
         "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_play.png"
+    },
+    {
+        "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_noise.xml.flat",
+        "source": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\src\\main\\res\\drawable\\ic_noise.xml"
     },
     {
         "merged": "C:\\Users\\V3Anom\\Documents\\GitHub\\spectrogram-android\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",

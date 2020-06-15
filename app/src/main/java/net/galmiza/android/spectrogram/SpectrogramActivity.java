@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
@@ -78,6 +79,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 	
 	// Buffers
 	private List<short[]> bufferStack; // Store trunks of buffers
+	private short[] noiseBuffer;
 	private short[] fileBuffer; // buffer supporting the file generation
 	private short[] fftBuffer; // buffer supporting the fft process
 	private float[] re; // buffer holding real part during fft process
@@ -85,6 +87,9 @@ public class SpectrogramActivity extends AppCompatActivity {
 
 	//file helpers
 	static private int iterVal = 0;
+
+	//noise helpers
+	static private boolean noise = false;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -220,20 +225,32 @@ public class SpectrogramActivity extends AppCompatActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.action_bar_menu_settings:
-			Intent intent = new Intent(this,PreferencesActivity.class);
-			startActivityForResult(intent, INTENT_SETTINGS);
-			return true;
-		case R.id.action_bar_menu_play:
-			menu.findItem(R.id.action_bar_menu_play).setVisible(false);
-			menu.findItem(R.id.action_bar_menu_pause).setVisible(true);
-			startRecording();
-			return true;
-		case R.id.action_bar_menu_pause:
-			menu.findItem(R.id.action_bar_menu_pause).setVisible(false);
-			menu.findItem(R.id.action_bar_menu_play).setVisible(true);
-			stopRecording();
-			return true;
+			case R.id.action_bar_menu_noise:
+				noise=true;
+				iterVal=0;
+				imageView.setImageResource(R.drawable.z);
+				Handler handler = new Handler();
+				handler.postDelayed(new Runnable() {
+					@Override
+					public void run() {
+						imageView.setImageResource(R.drawable.x);
+					}
+				},4000);
+				return true;
+			case R.id.action_bar_menu_settings:
+				Intent intent = new Intent(this,PreferencesActivity.class);
+				startActivityForResult(intent, INTENT_SETTINGS);
+				return true;
+			case R.id.action_bar_menu_play:
+				menu.findItem(R.id.action_bar_menu_play).setVisible(false);
+				menu.findItem(R.id.action_bar_menu_pause).setVisible(true);
+				startRecording();
+				return true;
+			case R.id.action_bar_menu_pause:
+				menu.findItem(R.id.action_bar_menu_pause).setVisible(false);
+				menu.findItem(R.id.action_bar_menu_play).setVisible(true);
+				stopRecording();
+				return true;
 		}
 		return false;
 	}
@@ -319,6 +336,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 		// Prepare recorder
 		recorder.prepare(fftResolution); // Record buffer size if forced to be a multiple of the fft resolution
 		fileBuffer = new short[66560];
+		noiseBuffer = new short[66560];
 		// Build buffers for runtime
 		int n = fftResolution;
 		fftBuffer = new short[n];
@@ -344,14 +362,28 @@ public class SpectrogramActivity extends AppCompatActivity {
 	 * Send these buffers for FFT processing (call to process())
 	 */
 	private void getTrunks(short[] recordBuffer) {
-		iterVal++;
-		for(int i = 0;i<1024;i++) {
-			fileBuffer[iterVal * i] = recordBuffer[i];
+		if(!noise) {
+			iterVal++;
+			for (int i = 0; i < 1024; i++) {
+				fileBuffer[iterVal * i] = recordBuffer[i];
+			}
+			if (iterVal == 64) {
+				sendFile();
+				iterVal = 0;
+				Log.d("YOYO", "getTrunks: " + Arrays.toString(fileBuffer));
+			}
 		}
-		if(iterVal == 64){
-			sendFile();
-			iterVal = 0;
-			Log.d("YOYO", "getTrunks: "+ Arrays.toString(fileBuffer));
+		else {
+			iterVal++;
+			for (int i = 0; i < 1024; i++) {
+				noiseBuffer[iterVal * i] = recordBuffer[i];
+			}
+			if (iterVal == 64) {
+				noise = false;
+				iterVal = 0;
+				Log.d("YOYO", "getTrunks: " + Arrays.toString(noiseBuffer));
+				//imageView.setImageResource(R.drawable.x);
+			}
 		}
 		int n = fftResolution;
 		// Trunks are consecutive n/2 length samples		
@@ -381,6 +413,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 		JSONObject jsonObject = new JSONObject();
 		try {
 			jsonObject.put("audio",new JSONArray(fileBuffer));
+			jsonObject.put("noise",new JSONArray(noiseBuffer));
 			jsonObject.put("sample_rate",samplingRate);
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -397,7 +430,7 @@ public class SpectrogramActivity extends AppCompatActivity {
 					conn.setDoOutput(true);
 					conn.setDoInput(true);
 
-					Log.i("JSON", jsonObject.toString());
+					//Log.i("JSON", jsonObject.toString());
 					DataOutputStream os = new DataOutputStream(conn.getOutputStream());
 					os.writeBytes(jsonObject.toString());
 
@@ -405,7 +438,6 @@ public class SpectrogramActivity extends AppCompatActivity {
 					os.close();
 
 					Log.i("STATUS", String.valueOf(conn.getResponseCode()));
-
 					try(BufferedReader br = new BufferedReader(
 							new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
 						StringBuilder response = new StringBuilder();
@@ -420,9 +452,11 @@ public class SpectrogramActivity extends AppCompatActivity {
 					conn.disconnect();
 				} catch (Exception e){
 					e.printStackTrace();
-					if(e.getClass().getCanonicalName().equals("java.net.ConnectException")){
+					if(e.getClass().getCanonicalName().equals("java.net.ConnectException") ||
+							e.getClass().getCanonicalName().equals("java.net.NoRouteToHostException"))
 						imageView.setImageResource(R.drawable.y);
-					}
+					else
+						imageView.setImageResource(R.drawable.w);
 				}
 			}
 		});
@@ -433,8 +467,8 @@ public class SpectrogramActivity extends AppCompatActivity {
 	 * Handle the POST return data
 	 */
 	private void printLabel(String label){
-
-		Log.d("Engine Output", "label: "+label);
+		if(noise)return;
+		//Log.d("Engine Output", "label: "+label);
 		switch (label) {
 			case "air_conditioner":
 				imageView.setImageResource(R.drawable.a);

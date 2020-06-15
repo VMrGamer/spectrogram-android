@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f5c618b-a140-42b6-983a-44144e71a3c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_noise.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/z.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -34,17 +36,18 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/net/galmiza/android/spectrogram/SpectrogramActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/net/galmiza/android/spectrogram/SpectrogramActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/net/galmiza/android/spectrogram/SpectrogramActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/net/galmiza/android/spectrogram/SpectrogramActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/b6e9248264c3f0a8547dcd4dd3779c3989aaf519c24b8c22f997851820e5710e_0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/b6e9248264c3f0a8547dcd4dd3779c3989aaf519c24b8c22f997851820e5710e_1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/b6e9248264c3f0a8547dcd4dd3779c3989aaf519c24b8c22f997851820e5710e_2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/b6e9248264c3f0a8547dcd4dd3779c3989aaf519c24b8c22f997851820e5710e_3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/d70ee46dba689115d297caf70f3a8f799759a06e2a31e788f6f561d880c0688c_0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/d70ee46dba689115d297caf70f3a8f799759a06e2a31e788f6f561d880c0688c_1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/d70ee46dba689115d297caf70f3a8f799759a06e2a31e788f6f561d880c0688c_2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/d70ee46dba689115d297caf70f3a8f799759a06e2a31e788f6f561d880c0688c_3.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/net/galmiza/android/spectrogram/SpectrogramActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/net/galmiza/android/spectrogram/SpectrogramActivity$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/net/galmiza/android/spectrogram/SpectrogramActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/net/galmiza/android/spectrogram/SpectrogramActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_main_menu.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_main_menu.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/net/galmiza/android/spectrogram/SpectrogramActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/net/galmiza/android/spectrogram/SpectrogramActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,33 +186,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591865698011" />
-    <state width="1340" height="264" key="GridCell.Tab.0.bottom" timestamp="1592140488346">
+    <state width="1266" height="263" key="GridCell.Tab.0.bottom" timestamp="1592216076563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592140488346" />
-    <state width="1340" height="264" key="GridCell.Tab.0.center" timestamp="1592140488346">
+    <state width="1266" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592216076563" />
+    <state width="1266" height="263" key="GridCell.Tab.0.center" timestamp="1592216076563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="264" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592140488346" />
-    <state width="1340" height="264" key="GridCell.Tab.0.left" timestamp="1592140488346">
+    <state width="1266" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592216076563" />
+    <state width="1266" height="263" key="GridCell.Tab.0.left" timestamp="1592216076563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="264" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592140488346" />
-    <state width="1340" height="264" key="GridCell.Tab.0.right" timestamp="1592140488346">
+    <state width="1266" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592216076563" />
+    <state width="1266" height="263" key="GridCell.Tab.0.right" timestamp="1592216076563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="264" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592140488346" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592141585780">
+    <state width="1266" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592216076563" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592213856538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592141585780" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592213856538" />
     <state x="723" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592038541124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="723" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592038541124" />
-    <state x="588" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1592125289655">
+    <state x="588" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1592211151213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592125289655" />
+    <state x="588" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592211151213" />
   </component>
 </project>
